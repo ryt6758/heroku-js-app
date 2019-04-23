@@ -9,8 +9,13 @@
 <body>
   <h1>PhotoList</h1>
   <div id="container">
-    <ul> <% photoList.forEach((photo) => { %> <li class="photo_list" data-photo-id="<%= photo.id %>"> <%= photo.name %>
-      </li> <% }) %> </ul>
+    <ul>
+      <% photoList.forEach((photo) => { %>
+        <li class="photo_list" data-photo-id="<%= photo.id %>">
+          <%= photo.name %>
+        </li>
+      <% }) %>
+    </ul>
   </div>
   <script>
     let photoLists = document.getElementsByClassName("photo_list");
