@@ -32,7 +32,7 @@ app.get("/", function (req, res, next) {
 
 // 写真リストを取得するAPI
 app.get("/api/photo/list", function (req, res, next) {
-  res.json(photoList);
+  res.render("list", { photoList });
 });
 
 app.get("/api/photo/:photoId", function (req, res, next) {
