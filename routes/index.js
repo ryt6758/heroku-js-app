@@ -1,5 +1,7 @@
-const photoList = require("../models/photolist.js").photoList;
+import Hoge from 'models/photolist'
 
+const photoList = Hoge.photoList;
+// require("../models/photolist.js").photoList;
 // module.exports.controller = class Controller {
 //   home(req, res) {
 //     res.render("index", {}); //{}はviewに対して、データを遅れる{photo: photolist}
@@ -21,6 +23,8 @@ const photoList = require("../models/photolist.js").photoList;
 // }
 
 class Controller {
+  exportedPhotoList = Hoge.photoList;
+
   home(req, res) {
     res.render("index", {}); //{}はviewに対して、データを遅れる{photo: photolist}
   }
