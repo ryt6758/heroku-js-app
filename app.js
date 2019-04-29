@@ -1,6 +1,6 @@
 /* 1. expressモジュールをロードし、インスタンス化してappに代入。*/
 const express = require("express");
-const Controller = require("./routes/index.js").controller;
+const Controller = require("./routes/index.mjs").controller;
 const controller = new Controller();
 const app = express();
 
